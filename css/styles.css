@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0}
+#gnavi {text-align:right}
+#gnavi li {
+	display: inline-block;
+}
+#gnavi a {
+	text-decoration: none;padding:10px;font-size:16px
+}
+.box01 {
+	background: url(../images/bg01.jpg) no-repeat center;
+	background-size: cover;
+	height:666px
+}
+footer{text-align:center}

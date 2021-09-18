@@ -18,8 +18,8 @@
     h2,
     h3,
     h4 {
-        font-size: 25px;
-        margin-bottom: 26px;
+        font-size: 22px;
+        margin-bottom: 20px;
     }
 
     h3 span {
@@ -40,6 +40,10 @@
         display: inline-block;
     }
 
+    .box_idx {
+        padding: 0 0 10px;
+    }
+
     .list_portofio {
         width: 100%;
 
@@ -48,7 +52,7 @@
     .list01 li {
         width: 100%;
         justify-content: space-between;
-        margin: 0 auto 35px
+        margin: 0 auto 45px
     }
 
     .list_portofio li {
@@ -56,7 +60,9 @@
         margin: 0 0 30px 0;
 
     }
-
+    .list01 .tit{
+        font-size: 17px
+    }
     #content {
         padding: 0 10px
     }
@@ -76,7 +82,7 @@
     }
 
     .list_portofio li .url {
-        margin: 20px auto;
+        margin: 15px auto;
     }
 
     /************/
@@ -93,9 +99,8 @@
         position: fixed;
         right: 10px;
         top: 10px;
-        z-index: 10;
+        z-index: 60;
         cursor: pointer
-
     }
 
     .icon_menu span {
@@ -154,15 +159,17 @@
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 5;
+        z-index: 55;
         background: #2892D2;
         height: 100%;
         overflow: auto;
         display: none
     }
-    nav::after{
+
+    nav::after {
         display: none
     }
+
     .pc_gnavi {
         width: 100%
     }
@@ -217,7 +224,8 @@
     }
 
     .url {
-        margin: 15px auto 20px
+        margin: 15px auto 20px;
+        font-size: 15px
     }
 
     .inner {
@@ -256,7 +264,7 @@
     }
 
     .box_resume {
-        padding: 0px 10px 40px;
+        padding: 20px 10px 40px;
 
     }
 
@@ -280,7 +288,8 @@
     }
 
     .list_contact li {
-        padding-left: 0
+        padding-left: 0;
+        margin-bottom: 10px
     }
 }
 

@@ -37,7 +37,7 @@ $(function () {
                     var p = $($(this).attr('href')).offset();
                     if (wWidth <= 640) {
                         $('html,body').animate({
-                            scrollTop: p.top
+                            scrollTop: p.top - 20
                         }, 600);
                         $('#sp-gnavi').removeClass('open');
                     } else {

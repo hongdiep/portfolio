@@ -1,31 +1,301 @@
-
-.sp_gnavi{display:none}
-/* CSS Document */
-@media screen and (max-width:640px) {
-#wrapper {
-	min-width: 100%
-}
-nav {
-	display: none
-}
-h1{font-size:20px}
-main{}
-.list01 li{width:100%;display:block;margin:0 auto 35px}
-#content{padding:0 10px}
-}
-=======
-.sp_gnavi{display:none}
-/* CSS Document */
-@media screen and (max-width:640px) {
-#wrapper {
-	min-width: 100%
-}
-nav {
-	display: none
-}
-h1{font-size:20px}
-main{}
-.list01 li{width:100%;display:block;margin:0 auto 35px}
-#content{padding:0 10px}
+.sp_gnavi,
+.icon_menu {
+    display: none
 }
 
+/* CSS Document */
+@media screen and (max-width:640px) {
+    #wrapper {
+        min-width: 100%
+    }
+
+
+    h1 {
+        font-size: 20px
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 25px;
+        margin-bottom: 26px;
+    }
+
+    h3 span {
+        font-size: 15px;
+    }
+
+    main {
+        margin-top: 30px
+    }
+
+    footer {
+        padding: 7px 0;
+    }
+
+    #totop {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+    }
+
+    .list_portofio {
+        width: 100%;
+
+    }
+
+    .list01 li {
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 auto 35px
+    }
+
+    .list_portofio li {
+        width: 47%;
+        margin: 0 0 30px 0;
+
+    }
+
+    #content {
+        padding: 0 10px
+    }
+
+
+    .sp_gnavi {
+        display: none
+    }
+
+    .list_portofio li .url {
+        font-size: 14px
+    }
+
+    .btn_view {
+        font-size: 14px;
+        padding: 8px 35px;
+    }
+
+    .list_portofio li .url {
+        margin: 20px auto;
+    }
+
+    /************/
+    .icon_menu {
+        display: inline-block;
+        float: right;
+        padding: 10px 5px 24px;
+        background: #2892D2;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        margin: 0;
+        width: 52px;
+        text-align: center;
+        height: 46px;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        z-index: 10;
+        cursor: pointer
+
+    }
+
+    .icon_menu span {
+        display: block;
+        background: #fff;
+        width: 70%;
+        height: 3px;
+        position: relative;
+        margin: 2px auto 0;
+        border-radius: 10px
+    }
+
+    .icon_menu span:after,
+    .icon_menu span:before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #fff;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        transition: all ease 0.5s;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-radius: 10px
+    }
+
+    .icon_menu.active span:after {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        bottom: -9px
+    }
+
+    .icon_menu.active span:before {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .icon_menu.active span {
+        background: transparent
+    }
+
+    .icon_menu span:after {
+        bottom: -18px;
+    }
+
+    .icon_menu span:before {
+        top: 9px;
+    }
+
+    /************/
+    nav {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 5;
+        background: #2892D2;
+        height: 100%;
+        overflow: auto;
+        display: none
+    }
+    nav::after{
+        display: none
+    }
+    .pc_gnavi {
+        width: 100%
+    }
+
+    .pc_gnavi > li {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .pc_gnavi > li > a {
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        display: block;
+        padding: 20px 10px;
+        letter-spacing: 1px;
+        font-size: 15px;
+        position: relative;
+    }
+
+    .pc_gnavi > li > ul {
+        padding: 0;
+        position: relative;
+        visibility: visible;
+        display: block
+    }
+
+    .pc_gnavi > li > ul li {
+        background: #fff;
+    }
+
+    .pc_gnavi > li > ul li > a {
+        border-bottom: 1px solid #2892D2;
+        background: #fff;
+        color: #2892D2
+    }
+
+    .pc_gnavi > li > ul li > a:hover {
+        background: #fff
+    }
+
+    .pc_gnavi > li:after {
+        display: none
+    }
+
+    /*&******************/
+    .box_about {
+        margin: 0 -10px 35px;
+        padding: 40px 10px;
+        text-align: left
+    }
+
+    .url {
+        margin: 15px auto 20px
+    }
+
+    .inner {
+        width: 100%
+    }
+
+    .box_portofio {
+        padding: 0px 10px 40px
+    }
+
+    .box_about p {
+        font-size: 14px
+    }
+
+    .list_skill .name {
+        font-size: 13px
+    }
+
+    .posi,
+    .company {
+        font-size: 15px;
+    }
+
+    .date {
+        font-size: 16px;
+    }
+
+    .list_resume dt::before {
+        background-size: 30px;
+        left: -19px;
+        top: -8px;
+    }
+
+    .list_resume dt {
+        font-size: 18px;
+    }
+
+    .box_resume {
+        padding: 0px 10px 40px;
+
+    }
+
+    .list_skill li {
+        padding: 4px 5px;
+    }
+
+    .btn-more {
+
+        margin: 30px auto 0;
+
+    }
+
+    .box_contact {
+        padding: 40px 10px;
+        margin: 0 -10px
+    }
+
+    .list_contact {
+        font-size: 14px
+    }
+
+    .list_contact li {
+        padding-left: 0
+    }
+}
+
+@media screen and (max-width:440px) {
+    .list_portofio {
+        display: block
+    }
+
+    .list_portofio li {
+        width: 100%;
+        display: block;
+        margin: 0 0 25px 0
+    }
+
+    .list_portofio li:last-child {
+        margin-bottom: 0
+    }
+}

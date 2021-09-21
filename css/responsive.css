@@ -46,6 +46,7 @@
 
     .list_portofio {
         width: 100%;
+
     }
 
     .list01 li {
@@ -290,12 +291,11 @@
         padding-left: 0;
         margin-bottom: 10px
     }
+   
 }
 
 @media screen and (max-width:440px) {
-    .list_portofio {
-        display: block
-    }
+  
 
     .list_portofio li {
         width: 100%;

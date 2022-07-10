@@ -74,6 +74,9 @@
     dd {
         font-size: 14px;
     }
+    textarea:focus,input:focus{
+        font-size: 14px;
+    }
     #wrapper {
         min-width: 100%;
     }
@@ -395,7 +398,7 @@
     }
 }
 /* iPhone (landscape) */
-@media screen and (min-device-height: 319px) and (max-device-height: 500px) and (orientation: landscape) {
+@media screen and (min-device-height: 300px) and (max-device-height: 500px) and (orientation: landscape) {
     .box_login {
         height: auto;
     }
@@ -407,6 +410,4 @@
     .pc_gnavi>li>a:hover, .pc_gnavi>li>span:hover {
         background: none;
     }
-
-
 }

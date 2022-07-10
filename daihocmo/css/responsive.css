@@ -12,15 +12,15 @@
     }
     .pc_gnavi .icon_file:hover:before {
         background: url('../images/icon-file-on.svg') no-repeat 0 35%;
-        background-size: contain;
+
     }
     .pc_gnavi .icon_login:hover:before {
         background: url('../images/icon-login-on.svg') no-repeat 0 40%;
-        background-size: contain;
+
     }
     .pc_gnavi .icon_user:hover:before {
         background: url('../images/icon-user-on.svg') no-repeat 0 50%;
-        background-size: contain;
+
     }
     .pc_gnavi>li>a:hover, .pc_gnavi>li>span:hover {
         color: #f02126;
@@ -30,11 +30,11 @@
     }
     .pc_gnavi .has>span:hover:after {
         background: url('../images/icon-arow-on.svg') no-repeat left center;
-        background-size: contain;
+
     }
     .pc_gnavi .icon_laptop:hover:before {
         background: url('../images/icon-laptop-on.svg') no-repeat 0 50%;
-        background-size: contain;
+
     }
     .btn:hover:before {
         left: 0;
@@ -399,4 +399,14 @@
     .box_login {
         height: auto;
     }
+}
+/* fix IE */
+/* IE */
+@media (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .pc_gnavi>li>a:hover, .pc_gnavi>li>span:hover {
+        background: none;
+    }
+
+
 }

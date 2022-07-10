@@ -395,7 +395,7 @@
     }
 }
 /* iPhone (landscape) */
-@media screen and (min-device-height: 320px) and (max-device-height: 500px) and (orientation: landscape) {
+@media screen and (min-device-height: 319px) and (max-device-height: 500px) and (orientation: landscape) {
     .box_login {
         height: auto;
     }

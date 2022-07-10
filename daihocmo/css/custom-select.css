@@ -1,8 +1,8 @@
 .custom-select {
   position: relative;
   border-radius: 5px;
-   border: 1px solid transparent;
-   min-width: 100px;
+  border: 1px solid transparent;
+  min-width: 100px;
 }
 .custom-select select {
   display: none;
@@ -38,8 +38,6 @@
   border-color: transparent transparent #59606b transparent;
   border-width: 0 5px 5px 5px;
 }
-
-
 /*style items (options):*/
 .select-items {
   position: absolute;
@@ -61,7 +59,6 @@
   border: 1px solid transparent;
   cursor: pointer;
   user-select: none;
-
 }
 .select-items div {
   border-radius: 5px;
@@ -73,11 +70,11 @@
 .select-items div, .select-selected {
   font-size: 160%;
 }
+.select-items div:hover {
+  background: #46464c;
+}
 /* PC */
 @media only screen and (min-width: 751px) {
-  .select-items div:hover {
-    background: #46464c;
-  }
   .custom-select:hover {
     border: 1px solid #fb720c;
   }
@@ -86,8 +83,8 @@
 @media only screen and (max-width: 750px) {
   .select-items div, .select-selected {
     font-size: 140%;
-  }.select-items{
+  }
+  .select-items {
     max-height: 300px;
   }
 }
-

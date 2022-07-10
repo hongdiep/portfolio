@@ -166,7 +166,7 @@ p:last-child {
 .logo {
     display: inline-block;
     margin: 0;
-    max-width: 363px;
+    max-width: 364px;
     line-height: 0;
 }
 /* gnavi */
@@ -207,22 +207,22 @@ p:last-child {
 }
 .pc_gnavi .icon_file:before {
     background: url('../images/icon-file.svg') no-repeat 0 35%;
-    background-size: contain;
+    background-size: 10px;
 }
 .pc_gnavi .icon_login:before {
     background: url('../images/icon-login.svg') no-repeat 0 40%;
-    background-size: contain;
+    background-size: 10px;
 }
 .pc_gnavi .icon_user:before {
     background: url('../images/icon-user.svg') no-repeat 0 50%;
-    background-size: contain;
+    background-size: 10px;
 }
 .pc_gnavi .icon_laptop {
     padding-left: 22px;
 }
 .pc_gnavi .icon_laptop:before {
     background: url('../images/icon-laptop.svg') no-repeat 0 50%;
-    background-size: contain;
+    background-size: 15px;
     width: 15px;
 }
 .pc_gnavi .has>span {
@@ -232,7 +232,7 @@ p:last-child {
     right: 0;
     width: 8px;
     background: url('../images/icon-arow.svg') no-repeat left center;
-    background-size: contain;
+    background-size: 8px;
 }
 .pc_gnavi .sub_menu {
     visibility: hidden;

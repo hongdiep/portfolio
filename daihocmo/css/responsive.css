@@ -1,0 +1,418 @@
+@media only screen and (min-width: 751px) and (max-width: 1220px) {}
+@media only screen and (min-width: 751px) {
+    /*****PC****/
+    a:hover img {
+        opacity: 0.7;
+    }
+    .pc {
+        display: block
+    }
+    .sp {
+        display: none
+    }
+    .pc_gnavi .icon_file:hover:before {
+        background: url('../images/icon-file-on.svg') no-repeat 0 35%;
+
+    }
+    .pc_gnavi .icon_login:hover:before {
+        background: url('../images/icon-login-on.svg') no-repeat 0 40%;
+
+    }
+    .pc_gnavi .icon_user:hover:before {
+        background: url('../images/icon-user-on.svg') no-repeat 0 50%;
+
+    }
+    .pc_gnavi>li>a:hover, .pc_gnavi>li>span:hover {
+        color: #f02126;
+        background: linear-gradient(to right, #f02126 0%, #fa670f 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .pc_gnavi .has>span:hover:after {
+        background: url('../images/icon-arow-on.svg') no-repeat left center;
+
+    }
+    .pc_gnavi .icon_laptop:hover:before {
+        background: url('../images/icon-laptop-on.svg') no-repeat 0 50%;
+
+    }
+    .btn:hover:before {
+        left: 0;
+    }
+    .pc_gnavi .sub_menu a:hover {
+        color: #f02126;
+        background: -webkit-linear-gradient(#f02126, #fa670f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .text_field:focus {
+        border: 1px solid #fb720c;
+    }
+    #totop a:hover {
+        background: #f02624;
+    }
+}
+@media only screen and (max-width: 750px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    input,
+    button,
+    textarea,
+    select,
+    p,
+    blockquote,
+    th,
+    td,
+    pre,
+    address,
+    li,
+    dt,
+    dd {
+        font-size: 14px;
+    }
+    textarea:focus,input:focus{
+        font-size: 14px;
+    }
+    #wrapper {
+        min-width: 100%;
+    }
+    .inner {
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .pc {
+        display: none
+    }
+    .sp {
+        display: block
+    }
+    .font-size-20 {
+        font-size: 16px;
+    }
+    .font_size_24 {
+        font-size: 20px;
+    }
+    .mb_40 {
+        margin-bottom: 28px;
+    }
+    .mb_43 {
+        margin-bottom: 35px;
+    }
+    .mt_40 {
+        margin-top: 25px;
+    }
+    .mt_30 {
+        margin-top: 20px;
+    }
+    .logo {
+        width: 160px;
+    }
+    #header {
+        padding: 8px 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 8;
+        width: 100%
+    }
+    #gnavi {
+        display: none;
+    }
+    .pc_gnavi>li {
+        margin: 0;
+    }
+    .pc_gnavi .icon_file::before, .pc_gnavi .icon_user:before, .pc_gnavi .icon_login::before {
+        background-position: 0 48%;
+    }
+    /* menu hamburger */
+    .ico_hamburger {
+        display: inline-block;
+    }
+    .icon_menu {
+        display: inline-block;
+        padding: 7px 5px 36px;
+        background-image: linear-gradient(to bottom, #fb720c, #f02326);
+        width: 65px;
+        text-align: center;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .icon_menu.open {
+        opacity: 0;
+    }
+    .icon_menu span {
+        display: block;
+        background: #fff;
+        width: 72%;
+        height: 3px;
+        position: relative;
+        margin: 2px auto 0;
+        border-radius: 10px;
+    }
+    .icon_menu span:after,
+    .icon_menu span:before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #fff;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        transition: all ease 0.5s;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-radius: 40px;
+    }
+    .icon_menu:after {
+        content: "MENU";
+        position: absolute;
+        bottom: 3px;
+        color: #fff;
+        font-size: 13px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .icon_menu.active:after {
+        content: "ĐÓNG";
+    }
+    .icon_menu.active span:after {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        bottom: -9px
+    }
+    .icon_menu.active span:before {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .icon_menu.active span {
+        background: transparent
+    }
+    .icon_menu span:after {
+        bottom: -18px;
+    }
+    .icon_menu span:before {
+        top: 9px;
+    }
+    /* end */
+    #gnavi {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        overflow: auto;
+        z-index: 10;
+        display: none;
+        top: 62px;
+        height: calc(100% - 62px);
+        background: #fff;
+        padding: 15px;
+        border-top: 3px solid #f02326;
+    }
+    .pc_gnavi>li>a, .pc_gnavi>li>span {
+        font-size: 15px;
+    }
+    .pc_gnavi>li {
+        display: block;
+        margin-bottom: 0;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .pc_gnavi .has>span {
+        border-bottom: 1px solid #ebebeb;
+    }
+    .pc_gnavi [class*="icon_"] {
+        display: block;
+        padding: 13px 15px 13px 20px !important;
+    }
+    .pc_gnavi .sub_menu {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        min-width: 100%;
+        margin: 0 auto;
+        transition: none;
+        box-shadow: none;
+    }
+    .pc_gnavi .has {
+        border-bottom: 0;
+    }
+    .pc_gnavi .sub_menu li:last-child a {
+        border-bottom: 1px solid #ebebeb;
+    }
+    .pc_gnavi .has>span::after {
+        width: 12px;
+    }
+    /*end gnavi  */
+    #content {
+        margin-top: 60px;
+    }
+    .box_login {
+        padding: 10vw 5vw;
+        height: calc(100vh - 160px);
+        display: flex;
+        align-items: center;
+    }
+    .form_login {
+        padding: 8vw 6vw;
+        border-radius: 4vw;
+    }
+    .under_h2 {
+        font-size: 26px;
+    }
+    .under_h3 {
+        font-size: 22px;
+    }
+    .under_h4 {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 15px;
+    }
+    .text_field {
+        padding: 14px;
+    }
+    .btn {
+        padding: 14px 12px;
+    }
+    .under .mainvisual {
+        height: 200px;
+    }
+    .box_pd01 {
+        padding: 45px 0;
+    }
+    .group_li>li, .group_li .c_text01 {
+        font-size: 16px;
+    }
+    .form_row .col_left, .form_row .col_right {
+        width: 100%;
+    }
+    .form_row .col_left {
+        margin-bottom: 35px;
+    }
+    .sum_price span, .sum_price strong {
+        font-size: 20px;
+    }
+    [class*="under_list"]>li {
+        padding-left: 14px;
+    }
+    .under_list02>li::before {
+        font-size: 14px;
+    }
+    .under_list01>li::before {
+        top: 8px;
+        width: 5px;
+        height: 5px;
+    }
+    .group_li {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .group_li>li {
+        min-width: auto;
+        width: 48.5%;
+    }
+    .group_li>li {
+        margin-right: 2%;
+    }
+    .method_pay .method_card {
+        margin-left: 20px;
+    }
+    .sp_center {
+        text-align: center;
+    }
+    /********* footer ********/
+    .copyright {
+        padding: 15px 10px;
+        font-size: 13px;
+    }
+    #totop {
+        bottom: 11px;
+    }
+    #totop a {
+        width: 35px;
+        height: 35px;
+        opacity: 0.8;
+    }
+}
+@media only screen and (max-width:530px) {
+    .box_pd01 {
+        padding: 40px 0;
+    }
+    .group_col_3 {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .group_col_3 .custom-select {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .group_col_3 .sum_price {
+        margin-left: 0;
+        display: inline-flex;
+        padding: 16px;
+        width: calc(100% - 112px);
+        margin-right: 20px;
+    }
+    .group_col_3 .img_vnpay {
+        display: inline-block
+    }
+}
+@media only screen and (max-width:414px) {
+    .under .mainvisual {
+        height: 150px;
+    }
+    .form_login .under_h2+p {
+        font-size: 14px;
+    }
+    .group_li .c_text01, .group_li strong {
+        display: block;
+    }
+}
+@media only screen and (max-width:375px) {
+    .two_column01 {
+        display: block;
+    }
+    .two_column01>div {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:360px) {
+    .form_login .under_h2+p {
+        font-size: 13px;
+    }
+    .group_col_3 .sum_price {
+        width: 100%;
+        margin-right: 0;
+    }
+    .group_col_3 .img_vnpay {
+        margin: 20px auto 0;
+    }
+}
+/* iPhone (landscape) */
+@media screen and (min-device-height: 200px) and (max-device-height: 500px) and (orientation: landscape) {
+    .box_login {
+        height: auto;
+    }
+}
+@media screen and (min-device-height: 320px) and (max-device-width: 320px){
+    .box_login {
+        height: auto;
+    }
+}
+
+/* IE */
+@media (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .pc_gnavi>li>a:hover, .pc_gnavi>li>span:hover {
+        background: none;
+    }
+}

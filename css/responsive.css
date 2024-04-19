@@ -2,18 +2,39 @@
 .icon_menu {
     display: none
 }
-
 /* CSS Document */
+@media screen and (min-width: 641px) and (max-width: 1200px) {
+    .portofilo .box_portofio {
+        padding-bottom: 1vw;
+    }
+    footer {
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 641px) and (max-width: 990px) {
+    .video_music {
+        float: right;
+        bottom: 0;
+        right: 0;
+        position: relative;
+    }
+    .box_about .details {
+        margin-bottom: 30px;
+    }
+    .box_about {
+        padding: 80px 0 0;
+    }
+    .box_about .avatar {
+        left: -20px;
+    }
+}
 @media screen and (max-width:640px) {
     #wrapper {
         min-width: 100%
     }
-
-
     h1 {
         font-size: 20px
     }
-
     h1,
     h2,
     h3,
@@ -21,98 +42,71 @@
         font-size: 22px;
         margin-bottom: 20px;
     }
-
     h3 span {
         font-size: 15px;
     }
-
     main {
         margin-top: 30px
     }
-
-    footer {
-        padding: 7px 0;
-    }
-
-    #totop {
-        width: 35px;
-        height: 35px;
-        display: inline-block;
-    }
-
     .box_idx {
         padding: 0 0 10px;
     }
-
     .list_portofio {
         width: 100%;
-
     }
-
-    .list01 li {
+    .list01 {
         width: 100%;
-        justify-content: space-between;
-        margin: 0 auto 45px
     }
-
     .list_portofio li {
         width: 47%;
         margin: 0 0 30px 0;
-
     }
-    .list01 .tit{
+    .list01 .tit {
         font-size: 17px
     }
     #content {
         padding: 0 10px
     }
-
-
     .sp_gnavi {
         display: none
     }
-
     .list_portofio li .url {
         font-size: 14px
     }
-
     .btn_view {
         font-size: 14px;
         padding: 8px 35px;
     }
-
     .list_portofio li .url {
         margin: 15px auto;
     }
-
     /************/
     .icon_menu {
         display: inline-block;
         float: right;
         padding: 10px 5px 24px;
-        background: #2892D2;
+        background: #4ea435;
         border: 1px solid rgba(255, 255, 255, 0.6);
         margin: 0;
-        width: 52px;
+        width: 55px;
         text-align: center;
         height: 46px;
         position: fixed;
-        right: 10px;
+        right: 0;
         top: 10px;
         z-index: 60;
-        cursor: pointer
+        cursor: pointer;
+        border-radius: 30px 0 0 30px;
     }
-
     .icon_menu span {
         display: block;
         background: #fff;
-        width: 70%;
+        width: 60%;
         height: 3px;
         position: relative;
         margin: 2px auto 0;
         border-radius: 10px
     }
-
     .icon_menu span:after,
     .icon_menu span:before {
         content: "";
@@ -128,60 +122,50 @@
         margin: 0 auto;
         border-radius: 10px
     }
-
     .icon_menu.active span:after {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
         bottom: -9px
     }
-
     .icon_menu.active span:before {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
-
     .icon_menu.active span {
         background: transparent
     }
-
     .icon_menu span:after {
         bottom: -18px;
     }
-
     .icon_menu span:before {
         top: 9px;
     }
-
     /************/
     nav {
         top: 0;
         left: 0;
         width: 100%;
         z-index: 55;
-        background: #2892D2;
         height: 100%;
         overflow: auto;
         display: none
     }
-
     nav::after {
         display: none
     }
-
     .pc_gnavi {
-        width: 100%
+        width: 100%;
+        display: block;
     }
-
-    .pc_gnavi > li {
+    .pc_gnavi>li {
         display: block;
         margin: 0;
         padding: 0;
         width: 100%;
     }
-
-    .pc_gnavi > li > a {
+    .pc_gnavi>li>a {
         color: #fff;
         border-bottom: 1px solid rgba(255, 255, 255, 0.6);
         display: block;
@@ -190,120 +174,202 @@
         font-size: 15px;
         position: relative;
     }
-
-    .pc_gnavi > li > ul {
+    .pc_gnavi>li>ul {
         padding: 0;
         position: relative;
         visibility: visible;
         display: block
     }
-
-    .pc_gnavi > li > ul li {
+    .pc_gnavi>li>ul li {
         background: #fff;
     }
-
-    .pc_gnavi > li > ul li > a {
-        border-bottom: 1px solid #2892D2;
+    .pc_gnavi>li>ul li>a {
+        border-bottom: 1px solid #4ea435;
         background: #fff;
-        color: #2892D2
+        color: #4ea435
     }
-
-    .pc_gnavi > li > ul li > a:hover {
+    .pc_gnavi>li>a:before {
+        display: none;
+    }
+    .pc_gnavi>li>ul li>a:hover {
         background: #fff
     }
-
-    .pc_gnavi > li:after {
+    .pc_gnavi>li:after {
         display: none
     }
-
     /*&******************/
     .box_about {
-        margin: 0 -10px 35px;
         padding: 40px 10px;
         text-align: left
     }
-
     .url {
         margin: 15px auto 20px;
         font-size: 15px
     }
-
     .inner {
         width: 100%
     }
-
     .box_portofio {
         padding: 0px 10px 40px
     }
-
     .box_about p {
         font-size: 14px
     }
-
     .list_skill .name {
         font-size: 13px
     }
-
     .posi,
     .company {
         font-size: 15px;
     }
-
     .date {
         font-size: 16px;
     }
-
     .list_resume dt::before {
-        background-size: 30px;
+        width: 40px;
+        height: 40px;
         left: -19px;
         top: -8px;
     }
-
     .list_resume dt {
         font-size: 18px;
     }
-
     .box_resume {
-        padding: 20px 10px 40px;
-
+        padding: 20px 20px 40px;
     }
-
+    .date:before {
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        left: -7px;
+    }
+    .list_resume dl {
+        margin-bottom: 45px;
+    }
+    .txt {
+        margin-bottom: 40px;
+    }
     .list_skill li {
-        padding: 4px 5px;
+        padding: 0;
     }
-
+    .list_portofio .last_none {
+        display: none;
+    }
+    .list_skill {
+        padding: 0 0 0 40px;
+    }
     .btn-more {
-
-        margin: 30px auto 0;
-
+        margin: 0 auto 0;
     }
-
     .box_contact {
         padding: 40px 10px;
         margin: 0 -10px
     }
-
     .list_contact {
         font-size: 14px
     }
-
     .list_contact li {
         padding-left: 0;
         margin-bottom: 10px
     }
-   
+    .box_about .avatar {
+        left: 0;
+        top: -1vw;
+        width: 28vw;
+        height: 28vw;
+    }
+    .box_about .details {
+        width: 100%;
+        margin-bottom: 35px;
+        padding: 20vw 0 0 17vw;
+        margin-left: 0;
+    }
+    .video_music {
+        float: right;
+        right: 0;
+        position: relative;
+        bottom: 0;
+    }
+    .dotted:after {
+        height: 5px;
+        width: 5px;
+        top: 12px;
+    }
+    .portofilo .box_portofio {
+        padding-bottom: 4vw;
+    }
+     .btn_view {
+        padding: 2px 35px;
+    }
+    .list_portofio li .url {
+        margin: 0 auto 10px;
+    }
+    footer {
+        height: 16vw;
+        background: url(../images/footer_bg_sp.png) no-repeat center bottom;
+        background-size: cover;
+    }
+    #totop {
+        width: 35px;
+    }
 }
+@media screen and (max-width:540px) {
+    .list01 {
+        flex-wrap: wrap;
+    }
+    .list01 li {
+        width: 48%;
+    }
+    .list01 li:last-child {
+        margin: 30px auto 0;
+    }
+    .box_about .details {
+        padding: 25vw 0 0;
+    }
+    .box_about h2 {
+        margin-bottom: 0;
+        position: relative;
+        bottom: -10vw;
+        padding-left: 3vw;
+    }
+    .list_resume dt {
+        padding: 0 0 20px 40px;
+    }
+    .date, .posi, .company, .txt {
+        padding: 0 0 0 40px;
+    }
 
-@media screen and (max-width:440px) {
-  
-
+    .copyright {
+        bottom: 8px;
+    }
+}
+@media screen and (max-width:375px) {
     .list_portofio li {
         width: 100%;
         display: block;
         margin: 0 0 25px 0
     }
-
     .list_portofio li:last-child {
         margin-bottom: 0
+    }
+    .list01 li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .list01 li:last-child {
+        margin-top: 0;
+    }
+    .box_about h2 {
+        padding-left: 11vw;
+    }
+    .video_music {
+        width: 100%;
+        border-radius: 40px;
+    }
+    #totop {
+        width: 22px;
+    }
+    footer {
+        height: 19vw;
     }
 }

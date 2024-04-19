@@ -7,7 +7,7 @@ $(function () {
             this.smoothScroll();
             this.iconMenu();
             this.countPortofio();
-           // this.initWow();
+           this.initWow();
 
         },
         //totop

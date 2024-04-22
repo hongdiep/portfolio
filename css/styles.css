@@ -583,3 +583,9 @@ footer {
 .portofilo .box_portofio {
     padding-bottom: 90px;
 }
+.link_a{
+    color: #5ea3da;
+}
+.link_a:hover{
+    color: #368cd0;
+}

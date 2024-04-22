@@ -268,7 +268,7 @@ h3 span {
     width: 200px;
     height: 200px;
     background: url('../images/ava.jpg') no-repeat center;
-    background-size: cover;
+    background-size: 300%;
     border-radius: 100%;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     border: 5px solid #fff;

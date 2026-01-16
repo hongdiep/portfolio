@@ -589,3 +589,6 @@ footer {
 .link_a:hover{
     color: #368cd0;
 }
+.pl-left{
+    padding-left: 20px;
+}
